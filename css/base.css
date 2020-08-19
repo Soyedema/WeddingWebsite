@@ -90,3 +90,9 @@ a:hover {
 .textRight {
     margin-right: 1em;
 }
+
+.timer {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
