@@ -1,8 +1,9 @@
 /* background and border styling */
 
 body {
-    background-color: #fdf6ec;
-    border: 1rem solid #fdf6ec;
+    background-color: #f7f6f1;
+    border: 1rem solid #f7f6f1;
+    /* border: 1rem solid #fdf6ec; */
 }
 
 .text {
@@ -30,7 +31,7 @@ header a {
 }
 
 .date {
-    margin-bottom: 4rem;
+    margin-bottom: .5rem;
 }
 
 .links {
@@ -50,20 +51,28 @@ a:hover {
     color: #c42e20;
 }
 
-.caro {
-    margin-top: 1em;
-    margin-bottom: 5em;
-    width: 80%;
+.sign {
+    height: auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    min-width: 800px;
-    max-width: 1020px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.caro {
+    margin-top: .5em;
+    margin-bottom: 5em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 1020px;
 }
 
 .imgscaro {
-    height: 600px;
-    max-height: 600px;
     width: auto;
+    max-height: 750px;
 }
 
 .slideshow {
@@ -138,7 +147,21 @@ a:hover {
         display: none;
     }
 
-    .date {
-        margin-bottom: 1rem;
+    .timer {
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width: 1335px) {
+    .imgscaro {
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 500){
+    .sign {
+        min-width: 50px;
     }
 }
