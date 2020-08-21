@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@700&family=Caveat&family=Dancing+Script:wght@600&family=Indie+Flower&family=Libre+Caslon+Display&family=Satisfy&?family=Shadows+Into+Light&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@700&family=Caveat&family=Dancing+Script:wght@600&family=Indie+Flower&family=Libre+Caslon+Display&family=Satisfy&family=Varela+Round&display=swap" as="stylesheet">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,9 +15,16 @@
     <title>#LionsAndSchneidersAndGlaziersOhMy!</title>
   </head>
   <body>
-    <header class="container-fluid topImage">
-      <h1 class="title col-12"><a href="../index.html">Alexandra &amp; Patrick</a></h1>
-      <h2 class="date col-12">July 3rd, 2021</h1>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+
+    <header class="container-fluid">
+      <div class="wood">
+        <h1 class="title col-12"><a href="../index.html">Alexandra &amp; Patrick</a></h1>
+        <h2 class="date col-12">July 3rd, 2021</h1>
+      </div>
       <div class="row">
         <h2 class="links col-12 col-md-3"><a href="weddingDay.html">Wedding Day</a></h2>
         <h2 class="links col-12 col-md-3"><a href="info.html">Info</a></h2>
@@ -28,40 +35,10 @@
 
     <p id="demo" class="timer"></p>
 
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Jul 3, 2021 19:00:00").getTime();
-      
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-      
-        // Get today's date and time
-        var now = new Date().getTime();
-      
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-      
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-        // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
-        + minutes + " minutes " + seconds + " seconds ";
-      
-        // If the count down is finished, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-      </script>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../javascript/timer.js"></script>
   </body>
 </html>

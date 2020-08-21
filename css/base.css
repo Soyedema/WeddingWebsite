@@ -11,11 +11,11 @@ body {
     line-height: 32px;
 }
 
-.wood {
+/* .wood {
     background-image: url(../imgs/wood.jpg);
     padding-bottom: 3%;
     margin-bottom: 2%;
-}
+} */
 
 header a {
     color: #6e0725;
@@ -26,15 +26,19 @@ header a {
 
 .title {
     text-align: center;
-    padding-top: 8%;
+    padding-top: 2%;
+}
+
+.date {
+    margin-bottom: 4rem;
 }
 
 .links {
     text-align: center;
     padding-top: 12px;
     padding-bottom: 10px;
-    font-family: 'Amatic SC', cursive;
-    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
 }
 
 .links2 {
@@ -85,11 +89,13 @@ a:hover {
 
 .imgLeft {
     margin-left: auto;
+    height: auto;
 }
 
 .imgRight {
     margin-right: auto;
     margin-bottom: 2rem;
+    height: auto;
 }
 
 .textLeft {
@@ -101,9 +107,13 @@ a:hover {
 }
 
 .timer {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Varela Round', sans-serif;
+    border: .1rem #e8a2a4 dashed;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: auto;
 }
 
 .partyPic {
@@ -124,7 +134,11 @@ a:hover {
         text-align: center;
     }
 
-    .caro {
-        width: 0%;
+    .byeElement {
+        display: none;
+    }
+
+    .date {
+        margin-bottom: 1rem;
     }
 }
