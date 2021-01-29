@@ -2,7 +2,7 @@
 
 body {
     background-color: #f7f6f1;
-    border: 1rem solid #f7f6f1;
+    /* border: 1rem solid #f7f6f1; */
     /* border: 1rem solid #fdf6ec; */
 }
 
@@ -23,6 +23,12 @@ header a {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 20%;
+}
+
+.topImage {
+    width: 100%;
+    height: auto;
+    padding-bottom: 35px;
 }
 
 .title {
@@ -51,6 +57,26 @@ a:hover {
     color: #c42e20;
 }
 
+.registryHeading{
+    text-align: center;
+}
+
+.registryList{
+    margin-left: 45%;
+    margin-right: 55%;
+    padding-inline-start: 0px;
+}
+
+.registry {
+    font-size: 1.25rem;
+    color: #6e0725;
+}
+
+.registryText {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 .sign {
     height: auto;
     width: 100%;
@@ -72,7 +98,7 @@ a:hover {
 
 .imgscaro {
     width: auto;
-    max-height: 750px;
+    max-height: 650px;
 }
 
 .slideshow {
@@ -88,7 +114,7 @@ a:hover {
 
 .sections {
     text-decoration: underline;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
 .sections {
@@ -115,27 +141,56 @@ a:hover {
     margin-right: 1em;
 }
 
-.timer {
-    font-size: 2rem;
+.dayName {
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    font-family: 'Varela Round', sans-serif;
-    border: .1rem #e8a2a4 dashed;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin: auto;
+    font-size: 5rem;
+    margin-top: 2rem;
+    
+}
+
+.dayHeader {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+
+/* .timer {
+    border: 5px ridge black;
+    margin: 0px;
+    padding: 0px;
+}  */
+
+.timepart {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .test {
     text-align: center;
 }
 
+.partyHeading {
+    font-family: 'Oswald', sans-serif;
+    color: #618295;
+    text-decoration: none;
+    text-align: center;
+}
+
 .partyPic {
-    border-radius: 10%;
-    margin-top: auto;
+    border-radius: 12%;
+    margin-top: px;
     margin-bottom: auto;
+    padding: 20px 0;
     align-self: left;
-    height: 192px;
-    width: 192px;
+    width: 100%;
+    height: auto;
 }
 
 .partyText {
@@ -148,7 +203,19 @@ a:hover {
 
 .picBack {
     background: grey;
-    border-radius: 15%;
+}
+
+.WPtexttest {
+    margin: 4px;
+}
+
+.WPpictest {
+    border-radius: 20%;
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+    width: 45%;
+    height: auto;
 }
 
 @media(max-width: 991px) {
@@ -176,5 +243,8 @@ a:hover {
 @media(max-width: 500){
     .sign {
         min-width: 50px;
+    }
+    .partyPic {
+        padding: 50px 0;
     }
 }
