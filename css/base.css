@@ -10,6 +10,14 @@ body {
     font-family: 'Alegreya', serif;
     font-size: 20px;
     line-height: 32px;
+    margin-bottom: 1.35em;
+}
+
+.bestman {
+    font-family: 'Alegreya', serif;
+    text-decoration: bold;
+    text-align: center;
+    font-size: 24px;
 }
 
 /* .wood {
@@ -24,6 +32,10 @@ header a {
     padding-right: 16px;
     border-radius: 20%;
 }
+
+/* .navbarColor {
+    background-color: #c48b82;
+} */
 
 .topImage {
     width: 100%;
@@ -115,11 +127,9 @@ a:hover {
 .sections {
     text-decoration: underline;
     font-family: 'Oswald', sans-serif;
-}
-
-.sections {
     color: #618295;
     text-decoration: none;
+    margin-bottom: 1.35rem;
 }
 
 .imgLeft {
@@ -129,8 +139,11 @@ a:hover {
 
 .imgRight {
     margin-right: auto;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+    margin-top: 4rem;
+    max-height: 620px;
     height: auto;
+    max-width: auto;
 }
 
 .textLeft {
@@ -146,21 +159,19 @@ a:hover {
     text-align: center;
     font-size: 5rem;
     margin-top: 2rem;
-    
+    color: #54051c
 }
 
 .dayHeader {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 2.3rem;
+    color: #6e0725;
 }
 
-
-/* .timer {
-    border: 5px ridge black;
-    margin: 0px;
-    padding: 0px;
-}  */
+.timer {
+    text-align: center;
+}
 
 .timepart {
     text-align: center;
@@ -168,9 +179,11 @@ a:hover {
     margin-bottom: 5px;
     margin-left: 15px;
     margin-right: 15px;
-    padding: 10px;
     font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+    display: inline-flex;
 }
+
 
 .test {
     text-align: center;
@@ -214,8 +227,46 @@ a:hover {
     display: block;
     margin: auto;
     padding: 20px 0;
-    width: 45%;
+    width: auto;
+    height: 300px;
+}
+
+.todoTitle {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #6e0725;
+}
+
+.todoPic {
+    max-height: 300px;
     height: auto;
+    width: auto;
+    max-width: 85%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.todoLink {
+    margin-left: 50%;
+    margin-right: 50%;
+    position: absolute;
+}
+
+.linktodo {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+}
+
+.zoopic {
+    max-height: 500px;
+    height: auto;
+    width: auto;
+    max-width: 85%;
+    margin-bottom: 2rem;
 }
 
 @media(max-width: 991px) {
@@ -240,11 +291,17 @@ a:hover {
     }
 }
 
-@media(max-width: 500){
-    .sign {
-        min-width: 50px;
+@media screen and (max-width: 500px){
+
+    .timepart {
+        font-size: .75rem;
     }
-    .partyPic {
-        padding: 50px 0;
+
+    .dayName {
+        font-size: 2.75rem;
+    }
+
+    .dayHeader {
+        font-size: 1rem;
     }
 }
