@@ -13,6 +13,12 @@ body {
     margin-bottom: 1.35em;
 }
 
+.text2 {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    line-height: 32px;
+}
+
 .bestman {
     font-family: 'Alegreya', serif;
     text-decoration: bold;
